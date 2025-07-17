@@ -28,7 +28,7 @@ butt.addEventListener('click', () => {
         if (code) {
           // Decrypt the QR code data
           const encryptedData = code.data;
-          const secretKey = "Made_By_BM";
+          const secretKey = "Made_By";
           const decryptedData = CryptoJS.AES.decrypt(encryptedData, secretKey).toString(CryptoJS.enc.Utf8);
           sectext.textContent = encryptedData;
           maintext.textContent = decryptedData;
