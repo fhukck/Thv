@@ -11,7 +11,7 @@ butt.addEventListener('click', () => {
   .then(stream => {
     // Create a video element to display the camera feed
     const video = document.createElement('video');
-    document.body.appendChild(video);
+    ;
     video.srcObject = stream;
     video.play();
 
@@ -28,7 +28,7 @@ butt.addEventListener('click', () => {
         if (code) {
           // Decrypt the QR code data
           const encryptedData = code.data;
-          const secretKey = "eokdo_is";
+          const secretKey = "Made_By_Bisz";
           const decryptedData = CryptoJS.AES.decrypt(encryptedData, secretKey).toString(CryptoJS.enc.Utf8);
           sectext.textContent = encryptedData;
           maintext.textContent = decryptedData;
