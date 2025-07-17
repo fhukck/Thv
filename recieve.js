@@ -11,7 +11,7 @@ butt.addEventListener('click', () => {
   .then(stream => {
     // Create a video element to display the camera feed
     const video = document.createElement('video');
-    ;
+    document.body.appendChild(video);
     video.srcObject = stream;
     video.play();
 
